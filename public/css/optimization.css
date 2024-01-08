@@ -1,0 +1,57 @@
+@media only screen and (orientation: portrait) and (min-device-width: 390px) and (max-device-height: 844px) and (-webkit-device-pixel-ratio: 3){
+    .logo {
+      color:red;
+    }
+  }
+
+@media only screen and (max-width: 575.98px) {
+    .container {
+      width:373px;
+    }
+    .container > .info > .desc {
+      width: 373px;
+    }
+    .info {
+      margin-top:120px;
+    }
+  .logo {
+    text-align:center;
+    font-size: 30px;
+    margin: 0 auto;
+    padding-left:60px;
+    line-height: 1.5;
+    color: white;
+  }
+  .nav ul {
+  	float: left;
+  }
+  
+  .nav ul li {
+  	list-style: none;
+  	display: inline;
+  	padding-left: 15px;
+  }
+  
+  .nav ul li a {
+  	text-decoration: none;
+  	color: white;
+  }
+  
+  .color-format {
+    padding:5px
+  }
+  .color-format > .format > .types > .type {
+    width: 145px;
+  }
+  .color-format > #format-left > .types > .type > p {
+    font-size:9px;
+    margin-top: 0px;
+    padding-top:10px
+  }
+  .color-format > #format-right> .types > .type > p {
+    font-size:9px;
+    margin-top: 0px;
+  }
+
+  
+}

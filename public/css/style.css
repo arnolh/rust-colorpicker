@@ -1,0 +1,153 @@
+:root {
+	--index: calc(1vw + 1vh);
+	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+}
+
+body {
+	background: #161513;
+	font-family: 'Unbounded',sans-serif;
+}
+
+body::-webkit-scrollbar {
+	width: 4px;
+               /* ширина scrollbar */;
+}
+
+body::-webkit-scrollbar-track {
+	background: #161513;
+        /* цвет дорожки */;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #d68ad3;
+    /* цвет плашки */;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+/* BEGIN NAV */
+.nav {
+	height: 60px;
+	border-radius: 20px;
+}
+
+.logo {
+	float: left;
+	line-height: 4;
+	color: white;
+	font-family: 'Unbounded',sans-serif;
+}
+
+.nav ul {
+	float: right;
+}
+
+.nav ul li {
+	list-style: none;
+	display: inline;
+	line-height: 2;
+	padding-left: 60px;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Unbounded',sans-serif;
+	transition: .5s ease-in-out;
+}
+
+.nav ul li a:hover {
+	color: gray;
+	transition: .5s ease-in-out;
+}
+
+/* END NAV */
+
+/* BEGIN INFO */
+
+.info {
+	/* background-color: #1f1f1a; */
+	width: 900px;
+	height: auto;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	/* border-radius: 20px; */
+	margin-bottom: 20px;
+	border-top: solid 1px #1f1f1a;
+}
+
+.info > .avatar {
+	width: 900px;
+	height: auto;
+}
+
+.info, .avatar a {
+	text-align: center;
+}
+
+.avatar img {
+	margin-top: 20px;
+	width: 180px;
+	border-radius: 100px;
+	background: linear-gradient(45deg, #e896ef 22%, #e078e9 44%, #930dbc 88%, #8AA9D6);
+	background-size: 200% 200%;
+	animation: avatarBGRadient 3s ease infinite;
+	transition: .5s ease-in-out;
+}
+
+@keyframes avatarBGRadient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.info > .desc {
+	color: white;
+	font-family: 'Unbounded',sans-serif;
+	position: relative;
+}
+.desc span {
+	background: linear-gradient(45deg, #e896ef 22%, #e078e9 44%, #930dbc 88%, #8AA9D6);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.desc p {
+    color: gray;
+    font-size: 11px;
+    max-width: 479px;
+    margin: 0 auto;
+}
+/* BEGIN FOOTER */
+.footer {
+    /* background: #1f1f1a; */
+	border-radius: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'Unbounded',sans-serif;
+	font-weight: 300;
+	transition: .5s ease-in-out;
+}
+
+.footer a:hover {
+	color: rgb(170, 167, 167);
+	transition: .5s ease-in-out;
+}
+/* END FOOTER */

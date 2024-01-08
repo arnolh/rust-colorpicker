@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust-Helper.ru | ColorPicker</title>
+
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/other.css">
+    <link rel="stylesheet" href="/public/css/optimization.css">
+    <script src="./public/script/app.js"></script>
+    <script src="/public/script/color.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/input-color-polyfill@0.0.2/color-polyfill.min.js"></script>
+
+</head>
+<body>
+    <div class="nav">
+        <div class="container">
+            <div class="logo">Rust-Helper.ru</div>
+            <ul>
+                <li><a href="/helper/Color.html">ColorPicker</a></li>
+                <li><a href="/helper/Prefab_id.html">Prefab</a></li>
+                <li><a href="/helper/Items_id.html">Items</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+            <div class="info">
+                <div class="desc"><h1><span>ColorPicker</span></h1><p>Подбор любой цветовой палитры</p></div>
+            </div>
+
+            <div class="colorpicker">
+
+                    <div class="rustpicker">
+                        <p id="unityRgbaValue">UnityRGBA: UnityRGBA(0, 0, 0, 1)</p>
+                    </div>
+
+                    <div class="color-picker">
+                        <div class="color-bg"><div class="color-preview" id="colorPreview"></div></div>
+                        <input type="range" min="0" max="255" value="255" id="redRange" class="red-range">
+                        <input type="range" min="0" max="255" value="0" id="greenRange" class="green-range">
+                        <input type="range" min="0" max="255" value="0" id="blueRange" class="blue-range">
+                        <input type="range" min="0" max="255" value="255" id="alphaRange" class="alpha-range">
+                    </div>
+
+                    <div class="color-format">
+                            <div class="format" id="format-left">
+
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="hexValue">HEX #ff0000</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="rgbValue">RGB: rgb(255, 0, 0)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="rgbaValue">RGBA: rgba(255, 0, 0, 1.0)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="rgbPercentageValue">%RGB: rgb(0%, 0%, 0%)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="rgbaPercentageValue">%RGBA: rgba(0%, 0%, 0%, 0%)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="argbValue">ARGB: argb(255, 255, 0, 0)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="hslValue">HSL: hsl(0, 100%, 50%)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="hsvValue">HSV: hsv(0, 100%, 100%)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        
+                            <div class="format" id="format-right">
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="cmykValue">CMYK: cmyk(0%, 100%, 100%, 0%)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="xyzValue">XYZ: xyz(0, 0, 0)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="webSafeValue">Web-safe RGB: rgb(0, 0, 0)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="hslaValue">HSLA: hsla(0, 0%, 0%, 1.0)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="labValue">LAB: lab(0.00, 0.00, 0.00)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="yiqValue">YIQ: yiq(0.00, 0.00, 0.00)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="rybValue">RYB: ryb(0.00, 0.00, 0.00)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="decimalValue">Decimal: 0, 0,</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="yxyValue">Yxy: yxy(0.0000, 0.0000, 0.0000)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="androidValue">Android: ARGB(255, 255, 255, 255)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="yuvValue">YUV: yuv(0.00, 0.00, 0.00)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="types">
+                                    <div class="type">
+                                        <p id="hunterLabValue">Hunter-Lab: HL(0.00, 0.00, 0.00)</p>
+                                        <button title="Скопировать цвет" class="copy-button">Copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+
+              </div>
+              
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <a href="https://t.me/arnolh"><span style="font-size: 10px">©️ 2023 | Данные под защитой хазмата</span></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

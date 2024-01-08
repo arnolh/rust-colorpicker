@@ -1,0 +1,133 @@
+.color-bg {
+  background: url(https://www.pravilamag.ru/upload/verstka_io/M164233/70e876ffd9e16c994fb61ab5ebee681a.jpg);
+  border-radius: 20px;
+  background-size: cover;
+}
+.colorpicker {
+  background: rgba(137, 137, 137, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  backdrop-filter: blur(75px) !important;
+  border-radius: 16px;
+  overflow: unset;
+  padding: 20px;
+  height: auto;
+}
+.rustpicker {
+  background: rgba(137, 137, 137, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  backdrop-filter: blur(75px) !important;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  color: white;
+  text-align: center;
+}
+.color-picker {
+  width: auto;
+  height: auto;
+  position: relative;
+  background: rgba(137, 137, 137, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  backdrop-filter: blur(75px) !important;
+  border-radius: 16px;
+  overflow: unset;
+  padding: 10px;
+}
+.color-picker .color-preview {
+  width: 100%;
+  height: 100px;
+  background-color: #ff0000;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.color-picker input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.color-info {
+  margin-top: 10px; 
+  display: inline-flex;
+}
+.color-info p {
+  font-size: 12px;
+}
+
+/*Formats-color-picture*/
+.color-format > .format {
+  color: white;
+  display: inline-grid;
+}
+
+.color-format > .format > .types {
+  display: inline-flex;
+  margin-top: 10px;
+}
+
+.color-format > .format > .types > .type > p {
+  font-size: 11px;
+  padding-top: 6px;
+  margin-left: 5px;
+}
+
+#format-left {
+  display: flex;
+  flex-direction: column;
+}
+
+#format-left .types {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* #format-left .type {
+  width: 100%;
+} */
+
+.color-format {
+  background: rgba(137, 137, 137, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  backdrop-filter: blur(75px) !important;
+  border-radius: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.color-format > .format > .types > .type {
+  background: rgba(137, 137, 137, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  backdrop-filter: blur(75px) !important;
+  border-radius: 16px;
+  padding: 5px;
+  border-radius: 20px;
+  width: 395px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden; /* Add this line to hide overflowing content */
+  height: 50px; /* Set a fixed height */
+}
+
+.copy-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: rgba(137, 137, 137, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  backdrop-filter: blur(75px) !important;
+  border-radius: 16px;
+  color: white;
+  border: none;
+  transition: 0.5s ease-in-out;
+}
+
+.copy-button:hover {
+  border-radius: 10px;
+  text-shadow: 0px 0px 12px rgb(84, 243, 11);
+  background: rgba(174, 212, 169, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  backdrop-filter: blur(75px) !important;
+  transition: 0.5s ease-in-out;
+}
